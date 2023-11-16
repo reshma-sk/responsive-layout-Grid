@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid black;
+        }
+        .container{   
+            height: 80vh;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            
+        }
+        .red{
+            background-color: red;
+            grid-column-start: 2;
+            grid-row-start: 1;
+            grid-column-end: 6;
+        }
+        .orange{
+            background-color: orange;  
+            grid-column-start: 1;
+            grid-row: 2/6; 
+            
+        }
+        .yellow{
+            background-color: yellow;
+            grid-column: 2/4;
+            grid-row: 2/5;
+            
+            
+        }
+        .green{
+            background-color: green;
+            grid-column: 4/6;
+            grid-row-start: 2;
+            
+        }
+        .purple{
+            background-color: purple;
+            grid-column-start: 6;
+            grid-row: 1/6;
+            
+        }
+        .blue{
+            background-color: blue;
+            grid-column: 2/6;
+            grid-row-start: 5;
+            
+        }
+        .pink{
+            background-color: rgb(111, 104, 108);
+            grid-column: 4/6;
+            grid-row: 3/5;
+            
+        }
+        .white{
+            background-color: rgb(230, 222, 222);
+            grid-column-start: 1;
+            grid-row-start: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="red">
+            &nbsp;
+        </div>
+       
+        <div class="orange">&nbsp;</div>
+        <div class="yellow">&nbsp;</div>
+        <div class="green">&nbsp;</div>
+        <div class="purple">&nbsp;</div>
+        <div class="blue">&nbsp;</div>
+        <div class="pink">&nbsp;</div>
+        <div class="white">&nbsp;</div>
+    </div>
+</body>
+</html>
